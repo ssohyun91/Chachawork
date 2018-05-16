@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Gobold';
+  src: url('Gobold.eot');
+  src: url('Gobold.woff2') format('woff2'),
+       url('Gobold.woff') format('woff'),
+       url('Gobold.ttf') format('truetype'),
+       url('Gobold.svg#Gobold') format('svg'),
+       url('Gobold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
