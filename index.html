@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
+  <script src="js/jquery.bxslider.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script src="js/circlechart.js"></script>
+
+</head>
+<body>
+  <div id="wrap">
+    <nav>
+      <ul>
+        <li><a data-id="#s1" onclick="scrollToAnchor('s1')">Home</a></li>
+        <li><a data-id="#s2" onclick="scrollToAnchor('s2')">Work Story</a></li>
+        <li><a data-id="#s3" onclick="scrollToAnchor('s3')">About</a></li>
+        <li><a data-id="#s4" onclick="scrollToAnchor('s4')">Portfolio</a></li>
+        <li><a data-id="#s5" onclick="scrollToAnchor('s5')">Contact</a></li>
+      </ul>
+    </nav>
+    <section id="section1">
+      <a name="s1"></a>
+      <div id="landing">
+        <div class="cloud">
+          <img src="images/cloud.png" alt="cloud">
+        </div>
+        <h1 class="logo"><img src="images/title_landing_1.png" alt="wonderland_logo"></h1>
+        <h1 class="title">WELCOME TO SO's WONDER LAND</h1>
+        <h2 class="title_sub">DESIGNER / PUBLISHER<h2>
+        <div class="main_img">
+          <img src="images/landing_bg.png" alt="main_image">
+          <div id="big_wheel">
+            <div class="cart" style="background-image:url('images/cart_yellow.png')"></div>
+            <div class="cart" style="background-image:url('images/cart_red.png')"></div>
+            <div class="cart" style="background-image:url('images/cart_green.png')"></div>
+            <div class="cart" style="background-image:url('images/cart_yellow.png')"></div>
+            <div class="cart" style="background-image:url('images/cart_red.png')"></div>
+            <div class="cart" style="background-image:url('images/cart_green.png')"></div>
+            <div class="cart" style="background-image:url('images/cart_yellow.png')"></div>
+            <div class="cart" style="background-image:url('images/cart_red.png')"></div>
+          </div>
+          <div class="merrygoround">
+            <div class="horse_set" id="horse_one">
+              <img class="poll" src="images/merrygoround_poll.png">
+              <span class="horse_group">
+                <img class="horse" src="images/merrygoround_horse.png">
+              </span>
+            </div>
+
+            <div class="horse_set" id="horse_two" style="left: 62px;">
+              <img class="poll" src="images/merrygoround_poll.png">
+              <span class="horse_group" style="top: 27px;">
+                <img class="horse" src="images/merrygoround_horse.png">
+              </span>
+            </div>
+
+            <div class="horse_set" id="horse_two" style="left: 122px;">
+              <img class="poll" src="images/merrygoround_poll.png">
+              <span class="horse_group">
+                <img class="horse" src="images/merrygoround_horse.png">
+              </span>
+            </div>
+
+            <!--div class="horse_set" id="horse_two" style="left: 31px; z-index: -1; opacity: 0.5;">
+              <img class="poll" src="images/merrygoround_poll.png">
+              <span class="horse_group"  style="top: 38px;">
+                <img class="horse" src="images/merrygoround_horse_reverse.png">
+              </span>
+            </div>
+
+            <div class="horse_set" id="horse_two" style="left: 93px; z-index: -1; opacity: 0.5;">
+              <img class="poll" src="images/merrygoround_poll.png">
+              <span class="horse_group"  style="top: 31px;">
+                <img class="horse" src="images/merrygoround_horse_reverse.png">
+              </span>
+            </div-->
+
+          </div>
+        </div>
+      </div><!--id:section1 end-->
+    </section>
+
+    <section id="section2">
+      <a name="s2"></a>
+      <div id="workstory">
+        <div class="workstory_box">
+        <h2 class="page_title"><img src="images/title_workstory.png" alt="workstory_title"></h2>
+        <div class="workstory_contents">
+          <ul class="workstory_main">
+            <li class="mindmap">
+              <div class="mindmap_inner">
+                <h3><span class="txt_w">박소현</span>을 나태내는 키워드</h3>
+                <p>
+                  <span class="txt_w">즐거움</span> 여행 친근함 꼼꼼 중국어<br />
+                  책임감 성실 <span class="txt_w">아기자기</span> 배움 <span class="txt_w">도전</span>
+                </p>
+              </div>
+            </li>
+            <li class="concept">
+              <div class="concept_inner">
+                <h3>즐거움 + 아기자기 + 도전 = 놀이공원</h3>
+                <p class="txt_han">
+                  즐거움은 언제나 나를 움직이게 하는 원동력이다.<br />
+                  주요 주제를 언제나 즐거우면서도 <br />
+                  도전이 함께해야하는 놀이공원으로 표현하였다.
+                </p>
+            </div>
+            </li>
+            <li class="mylogo">
+              <div class="mylogo_inner">
+                <div class="mylogo_img_box">
+                  <img src="images/logo_w.png" alt="logo" class="mylogo_img">
+                  <img src="images/logo_b_3.png" alt="logo" class="mylogo_img">
+                </div>
+                <p class="txt_han">
+                  영문이름 SH의 소문자 필기체를 <br />
+                  롤러코스터 트랙처럼 형상화하여<br />
+                  포트폴리오 컨셉인 놀이공원을 상징하도록 했다.
+                </p>
+              </div>
+            </li>
+            <li class="color">
+              <div class="color_inner txt_han">
+                <ul>
+                  <li class="color1">
+                    <p>
+                      <span class="colorbox c1"></span>#D55b55 &nbsp;&nbsp;&nbsp;<span class="s">R213 G91 B85</span>
+                    </p>
+                  </li>
+                  <li class="color2">
+                    <p>
+                      <span class="colorbox c2"></span>#96D455 &nbsp;&nbsp;&nbsp;<span class="s">R150 G212 B85</span>
+                    </p>
+                  </li>
+                  <li class="color3">
+                    <p>
+                      <span class="colorbox c3"></span>#FCDB2D &nbsp;&nbsp;&nbsp;<span class="s">R252 G219 B45</span>
+                    </p>
+                  </li>
+                  <li class="color4">
+                    <p>
+                      <span class="colorbox c4"></span>#F89EA9 &nbsp;&nbsp;&nbsp;<span class="s">R248 G158 B169</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+
+
+          <!-- <ul class="workstory_main">
+            <li class="mindmap">
+              <img src="images/workstory_icon_mindmap.png" alt="mindmap icon">
+              <div class="mindmap_inner">
+                <h3><span style="color:#d55b55;">01</span> Mindmap</h3>
+                <img src="images/mindmap_fin.png" alt="mindmap">
+              </div>
+            </li>
+            <li class="concept">
+              <img src="images/workstory_icon_concept.png" alt="concept icon">
+              <div class="concept_inner">
+                <h3><span style="color:#fcdb2d;">02</span> Concept</h3>
+                <img src="images/concept_1.png" alt="concept_explan">
+                <p class="txt_han">
+                  즐거움은 언제나 나를 움직이게 하는 원동력이다.<br />
+                  주요 주제를 언제나 즐거우면서도 <br />
+                  도전이 함께해야하는 놀이공원으로 표현하였다.
+                </p>
+            </div>
+            </li>
+            <li class="mylogo">
+              <img src="images/workstory_icon_logo.png" alt="mylogo icon">
+              <div class="mylogo_inner">
+                <h3><span style="color:#f89ea9;">03</span> Logo</h3>
+                <img src="images/logo.png" alt="logo">
+                <p class="txt_han">
+                  영문이름 SH의 소문자 필기체를 <br />
+                  롤러코스터 트랙처럼 형상화하여<br />
+                  포트폴리오 컨셉인 놀이공원을 상징하도록 했다.
+                </p>
+              </div>
+            </li>
+            <li class="color">
+              <img src="images/workstory_icon_color.png" alt="color icon">
+              <div class="color_inner">
+                <h3><span style="color:#69b7ba;">04</span> Color</h3>
+                <ul>
+                  <li class="color1">
+                    <p>
+                      <span class="colorbox c1"></span>#96D455 &nbsp;&nbsp;&nbsp;<span class="s">R150 G212 B85</span>
+                    </p>
+                  </li>
+                  <li class="color2">
+                    <p>
+                      <span class="colorbox c2"></span>#FCDB2D &nbsp;&nbsp;&nbsp;<span class="s">R252 G219 B45</span>
+                    </p>
+                  </li>
+                  <li class="color3">
+                    <p>
+                      <span class="colorbox c3"></span>#F89EA9 &nbsp;&nbsp;&nbsp;<span class="s">R248 G158 B169</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul> -->
+          <!-- <div class="car">
+            <img src="images/car.png" alt="car">
+          </div> -->
+        </div>
+      </div>
+      </div><!--id:section2 end-->
+    </section>
+
+    <section id="section3">
+      <a name="s3"></a>
+      <div id="about">
+        <h2 class="page_title">
+          <img src="images/title_about.png" alt="about_title">
+        </h2>
+        <div class="about_contents">
+          <div class="photo">
+            <ul>
+              <li>
+                <div class="photo_img">
+                  <img src="images/my_photo_2.png" alt="my_photo">
+                </div>
+              </li>
+              <li>
+                <img src="images/about_1.png" alt="cart" class="mysay">
+              </li>
+              <li>
+                <div class="mysay">
+                  <div class="mysay_contents">
+                    <p>
+                      <span>My Say</span><br /><br />
+                      성실한! 준비된! 인재입니다.<br />
+                      pick me! pick me! pick me! pick me! pick me! pick me!<br />
+                      pick me! pick me! pick me! pick me! pick me! pick me!<br />
+                      pick me up!
+                    </p>
+                  </div>
+                </div>
+              </li>
+          </div>
+
+          <div class="about_contents_r">
+            <div class="career">
+              <table>
+                <tr>
+                  <th>Name</th>
+                  <td>박소현</td>
+                </tr>
+                <tr>
+                  <th>Birth</th>
+                  <td>1991.11.22</td>
+                </tr>
+                <tr>
+                  <th>Current Location</th>
+                  <td>경기도 안양시 동안구</td>
+                </tr>
+                <tr>
+                  <th>Education</th>
+                  <td>
+                    한국외국어대학교 중국어통번역학과 졸업<br />
+                    SBS아카데미 웹디자인/퍼블리셔 과정 수료
+                  </td>
+                </tr>
+                <tr>
+                  <th>Certification</th>
+                  <td>
+                    ACA Photoshop/Illustrator<br />
+                    Mos2010 Master<br />
+                    자동차 운전면허 1종 보통
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="skills">
+              <h3><img src="images/title_about_1.png" alt="skills_title"></h3>
+              <div class="circle-graph-container">
+                <span>Ps</span>
+                <div class="data">85%</div>
+                 <canvas id="myChart"></canvas>
+               </div>
+              <div class="circle-graph-container">
+                <span>Ai</span>
+                <div class="data">90%</div>
+                  <canvas id="myChart2"></canvas>
+              </div>
+              <div class="circle-graph-container">
+                <span>Html</span>
+                <div class="data">85%</div>
+                  <canvas id="myChart3"></canvas>
+              </div>
+              <div class="circle-graph-container">
+                <span>Css</span>
+                <div class="data">80%</div>
+                  <canvas id="myChart4"></canvas>
+              </div>
+              <div class="circle-graph-container">
+                <span>Jquery</span>
+                <div class="data">75%</div>
+                  <canvas id="myChart5"></canvas>
+              </div>
+
+            </div><!--class:skills end-->
+          </div><!--class=about_contents_r end-->
+          <div style="clear:both;"></div>
+        </div><!--class:about_contents end-->
+      </div><!--id:about end-->
+    </section><!--id:section3 end-->
+
+    <section id="section4">
+      <a name="s4"></a>
+      <div id="portfolio">
+        <h2 class="page_title">
+          <img src="images/title_portfolio.png" alt="portfolio_title">
+        </h2>
+        <div class="portfolio_contents">
+          <div class="rabbit">
+            <img src="images/p_rabbit.png" alt="rabbit">
+          </div>
+          <ul class="tap portfolio_box">
+            <li class="web">
+              <h3 class="title_web">WEB</h3>
+              <div>
+                <ul class="slider1">
+                  <li>
+                    <div style="background:url('images/nikon_main.png') no-repeat; background-size:469px 307px;" alt="Nikon" title="Web Renewal"
+                      data-view="work-design-01.png" data-site="Portfolio/Nikon/index.html" class="work_box imgBox">
+                      <a class="imgBox_inner">
+                        <button class="slider_btn">VIEW</button>
+                      </a>
+                    </div>
+                    <h4>Nikon Website Renewal</h4>
+                    <p class="txt_han">
+                      '니콘이미징코리아' 웹사이트 리뉴얼 작업
+                    </p>
+                  </li>
+
+                  <li>
+                    <div style="background:url('images/coldbrew_main.png') no-repeat; background-size:469px 307px;" alt="Coldbrew" title="Web Renewal"
+                      data-view="work-design-02.png" data-site="Portfolio/Coldbrew/index.html" class="work_box imgBox">
+                      <a class="imgBox_inner">
+                        <button class="slider_btn">VIEW</button>
+                      </a>
+                    </div>
+                    <h4>Coldbrew by Babinski Event Website</h4>
+                    <p class="txt_han">
+                      한국야쿠르트사의 커피브랜드 <br />
+                      '콜드브루 바이 바빈스키' 이벤트 웹사이트 작업
+                    </p>
+                  </li>
+                  <li>
+                    <div style="background:url('images/stil_main.png') no-repeat; background-size:469px 307px;" alt="Stil" title="Website Copy"
+                      data-view="stil_main.png" data-site="Portfolio/Stil/index.html" class="work_box imgBox">
+                      <a class="imgBox_inner">
+                        <button class="slider_btn">VIEW</button>
+                      </a>
+                    </div>
+                    <h4>Stil Website Copy</h4>
+                    <p class="txt_han">
+                      휴대폰 케이스 브랜드 'STIL' <br />
+                      웹사이트 카피 작업
+                    </p>
+                  </li>
+                  <li>
+                    <div style="background:url('images/wedding_main.png') no-repeat; background-size:469px 307px" alt="Wedding-Card" title="Website Design" data-view="wedding_01.png" data-site="Portfolio/Wedding/images/wedding_01.png" class="work_box imgBox">
+                      <a class="imgBox_inner">
+                        <button class="slider_btn">VIEW</button>
+                      </a>
+                    </div>
+                    <h4>Wedding-Card Website Design</h4>
+                    <p class="txt_han">
+                      웹 / 모바일 청첩장 디자인 작업
+                    </p>
+                  </li>
+                  <li>
+                    <div style="background:url('images/cs_bg.png') no-repeat; background-size:469px 307px;" alt="Coming soom" title="Coming soon"
+                      data-view="landing_1.png" data-site="#" class="work_box imgBox">
+                      <a class="imgBox_inner">
+                        <button class="slider_btn">VIEW</button>
+                      </a>
+                    </div>
+                    <h4>Coming soon!</h4>
+                  </li>
+                </ul>
+              </div>
+            </li><!--class:web end-->
+
+            <li class="art">
+              <h3 class="title_art">ART</h3>
+              <div>
+                <ul class="slider2">
+                  <li>
+                    <div style="background:url('images/art-design-01.png') no-repeat; background-size:469px 307px;" alt="Poligon Artwork" title="Artwork"
+                      data-view="art-design-01.jpg" data-site="#" class="work_box imgBox">
+                      <a class="imgBox_inner">
+                        <button class="slider_btn">VIEW</button>
+                      </a>
+                    </div>
+                    <h4>Poligon Art</h4>
+                    <p>
+                      Illustrator <br /> 8 Hours
+                    </p>
+                  </li>
+                  <li>
+                    <div style="background:url('images/art-design-02.png') no-repeat; background-size:469px 307px;" alt="Charactor Design" title="Artwork"
+                      data-view="art-design-02_in.png" data-site="#" class="work_box imgBox">
+                      <a class="imgBox_inner">
+                        <button class="slider_btn">VIEW</button>
+                      </a>
+                    </div>
+                    <h4>Charactor Design</h4>
+                    <p>
+                      Illustrator <br /> 3 Hours
+                    </p>
+                  </li>
+                  <li>
+                    <div style="background:url('images/art-design-03.jpg') no-repeat; background-size:469px 307px;" alt="Graphic Artwork" title="Artwork"
+                      data-view="art-design-03.jpg" data-site="#" class="work_box imgBox">
+                      <a class="imgBox_inner">
+                        <button class="slider_btn">VIEW</button>
+                      </a>
+                    </div>
+                    <h4>Graphic Artwork</h4>
+                    <p>
+                      Photoshop <br /> 2 Hours
+                    </p>
+                  </li>
+                  <li>
+                    <div style="background:url('images/cs_bg.png') no-repeat; background-size:469px 307px;" alt="Coming soon" title="Coming soon"
+                      data-view="landing_1.png" data-site="#" class="work_box imgBox">
+                      <a class="imgBox_inner">
+                        <button class="slider_btn">VIEW</button>
+                      </a>
+                    </div>
+                    <h4>Coming soon!</h4>
+                  </li>
+                </ul>
+              </div>
+            </li><!--class:art end-->
+          </ul>
+          <div class="clown">
+            <img src="images/p_clown.png" alt="clown">
+          </div>
+        </div><!--class:portfolio_contents end-->
+      </div><!--id:portfolio end-->
+      <div class="portfolio_info">
+        <div class="info_box">
+          <a href="" target="_blink" class="view_bt">View Site</a>
+          <img src="images/work-design-01.png" alt="work-design-01" style="cursor:pointer;" />
+        </div>
+      </div>
+      <div class="portfolio_info_1">
+        <div class="info_box_1">
+          <img src="images/work-design-01.png" alt="work-design-01" style="cursor:pointer;" />
+        </div>
+      </div>
+    </section><!--id:section4 end-->
+
+    <section id="section5">
+      <a name="s5"></a>
+      <div id="contact">
+        <h2 class="page_title">
+          <img src="images/title_contact.png" alt="contact_title">
+        </h2>
+        <div class="contact_contents">
+          <div class="border">
+            <div class="contact_detail">
+              <ul>
+                <li>
+                  <p>See You Again!</p>
+                </li>
+                <li>
+                  <table>
+                    <tr>
+                      <th>E.</th>
+                      <td>ssohyun91@gmail.com</td>
+                    </tr>
+                    <tr>
+                      <th>M.</th>
+                      <td>010 8591 3144</td>
+                    </tr>
+                  </table>
+                </li>
+                <li>
+                  <img src="images/contact_1.png" alt="wonderland_img">
+                </li>
+              </ul>
+            </div><!--class:contact_detail end-->
+            <div class="email">
+              <p>
+                Please send me a message.<br />
+                Thank you.
+              </p>
+              <form method="post" action="mail.php">
+                <input type="text" id="name" name="name" placeholder="Name">
+                <input type="text" id="phone" name="tel" placeholder="Tellephone number">
+                <input type="text" id="email" name="email" placeholder="E-mail">
+                <textarea id="message" name="message" placeholder="Please leave me a message"></textarea>
+                <input type="submit" id="sendbutton" value="SEND" />
+              </form>
+            </div>
+          </div>
+          <p class="copyright">COPYRIGHT@PARK SOHYUN. ALL RIGHTS RESERVED.</p>
+        </div>
+      </div>
+    </section><!--id:section5 end-->
+
+  </div><!--id:wrap end-->
+
+
+</body>
+</html>
