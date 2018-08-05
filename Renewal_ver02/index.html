@@ -1,171 +1,282 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta lang="en">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- css-->
-    <link rel="stylesheet" href="css/master.css">
-
     <!-- Bootsrtrap css-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="css/animated-slider.css" />
+
+    <!-- Fontawesome links-->
+    <link rel="stylesheet" href="./static/fontawesome/css/fontawesome.css" />
+    <link rel="stylesheet" href="static/fontawesome/css/solid.css" />
+
+    <!-- css-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css">
+
 
     <title>ChaCha World</title>
-    <style>
-body, html {
-  height: 100%;
-  margin: 0;
-  font-size: 14px;
-  color: #777;
-}
-
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  position: relative;
-  opacity: 0.65;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-.bgimg-1 {
-  background-image: url("img_parallax.jpg");
-  min-height: 100%;
-}
-
-.caption {
-  position: absolute;
-  left: 0;
-  top: 45%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-}
-
-.caption span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
-}
-
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-    }
-}
-</style>
 
   </head>
   <body>
-    <header>
-      <nav class="container-fluid">
-        <ul>
-          <li>INTRO</li>
-          <li>WORK</li>
-          <li>ABOUT</li>
-          <li>CONTACT</li>
+
+    <nav class="nav fixed-top">
+
+
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" href="./index.html">Hi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./work.html">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
         </ul>
-      </nav>
-    </header>
-    <!-- <div class="warpper">
+
+    </nav>
+
+    <div class="warpper">
       <section class="intro">
-          <div class="bgimg-1">
-            <div class="caption">
+        <div class="intro-box">
+          <h1 id="typed">
 
+          </h1>
+        </div>
+      </section>
 
-              <h1>
-                  Hi, I'm SOHYUN.
-              </h1>
-              <h4>
-                  Please call me ChaCha.
-              </h4>
-            </div>
-          </div>
-      </section> -->
-
-      <!-- <section class="work">
-           <div class="work-box">
-             <h3>
+      <section class="work container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+           <div class="work-txtBox">
+             <h1>
                Title
-             </h3>
+             </h1>
              <div class="work-summary">
                <p>
-                 Summary about selected Portfolio work within 3 lines.Summary about selected Portfolio work within 3 lines.Summary about selected Portfolio work within 3 lines.
+                 Summary selected Portfolio work within 3 lines.Summary selected Portfolio work within 3 lines.Summary selected Portfolio work within 3 lines.
                </p>
              </div>
              <div class="work-info">
                <ul>
                  <li>
-                   <h4>
+                   <span>
                      Role
-                   </h4>
+                   </span>
                    <p>
-                     UX UI Design / Publishing
+                     UX UI Design
                    </p>
                  </li>
                  <li>
-                   <h4>
+                   <span>
                      Period
-                   </h4>
+                   </span>
                    <p>
                      2018.06 - 2018.07
                    </p>
                  </li>
                  <li>
-                   <h4>
-                     Tools
-                   </h4>
+                   <span>
+                     Tool
+                   </span>
                    <p>
                      Sketch / Illustrator / Photoshop / ProtoPie / Adobe XD
                    </p>
                  </li>
                </ul>
+               <div class="work-detail-btn">
+                 <button type="button" name="button" class="basic-btn">
+                   See more
+                   <i class="fas fa-angle-right"></i>
+                 </button>
+               </div>
              </div>
-           </div><!- class="work-box" end-->
-
-           <!-- <div class="work-portfolioBox">
-             <ul class="work-portfolioBox-list">
-               <li>
-                 <h3>
-                   Title
-                 </h3>
-               </li>
-               <li>
-                 <h3>
-                   Title
-                 </h3>
-               </li>
-               <li>
-                 <h3>
-                   Title
-                 </h3>
-               </li>
-               <li>
-                 <h3>
-                   Title
-                 </h3>
-               </li>
-             </ul>
+            </div><!-- class="work-txtBox" end-->
            </div>
-      </section>
 
-      <section class="about">
-        <div class="about-box">
-          <div class="about-selfie">
-            <img src="" alt="" />
+
+           <div class="work-pfBox col-lg-6 col-md-6 col-sm-12">
+             <ul class="work-pfBox-list">
+
+               <li>
+                 <div class="work-pfBox-list-img">
+                   <img src="" alt="">
+                 </div>
+                 <h3>
+                   Mobile Application - SPOTLIFE
+                 </h3>
+
+                 <ul class="work-pfBox-list-info">
+                   <li>
+                     <p>
+                       SPOTLIFE is an exhibition mobile application. It will provide to people who want to access an exhibition easily and quickly.
+                     </p>
+                   </li>
+                   <li>
+                     <span>
+                       Role
+                     </span>
+                     <p>
+                       UX UI Design
+                     </p>
+                   </li>
+                   <li>
+                     <span>
+                       Period
+                     </span>
+                     <p>
+                       2018.06 - 2018.07
+                     </p>
+                   </li>
+                   <li>
+                     <span>
+                       Tool
+                     </span>
+                     <p>
+                       Sketch / Illustrator / Photoshop / ProtoPie / Adobe XD
+                     </p>
+                   </li>
+                 </ul>
+
+               </li>
+               <li>
+                 <div class="work-pfBox-list-img">
+                   <img src="" alt="">
+                 </div>
+                 <h3>
+                   Event Website - Coldbrew by Babinski
+                 </h3>
+
+                 <ul class="work-pfBox-list-info">
+                   <li>
+                     <p>
+                       Coldbrew by Babinski is a brand for a coldbrew coffee at Hankuk Yakurt Company. It has lots of goodness, but there wans't website its own. Therefore the needs came up, and I trying to make one.
+                      </p>
+                   </li>
+                   <li>
+                     <span>
+                       Role
+                     </span>
+                     <p>
+                       UI Design /  Publishing
+                     </p>
+                   </li>
+                   <li>
+                     <span>
+                       Period
+                     </span>
+                     <p>
+                       2016.12 - 2017.01
+                     </p>
+                   </li>
+                   <li>
+                     <span>
+                       Tool
+                     </span>
+                     <p>
+                      Illustrator / Photoshop
+                     </p>
+                   </li>
+                 </ul>
+
+               </li>
+
+               <li>
+                 <div class="work-pfBox-list-img">
+                   <img src="" alt="">
+                 </div>
+                 <h3>
+                   Mobile Application - SPOTLIFE
+                 </h3>
+
+                 <ul class="work-pfBox-list-info">
+                   <li>
+                     <p>
+                       SPOTLIFE is an exhibition mobile application. It will provide to people who want to access an exhibition easily and quickly.
+                     </p>
+                   </li>
+                   <li>
+                     <span>
+                       Role
+                     </span>
+                     <p>
+                       UX UI Design
+                     </p>
+                   </li>
+                   <li>
+                     <span>
+                       Period
+                     </span>
+                     <p>
+                       2018.06 - 2018.07
+                     </p>
+                   </li>
+                   <li>
+                     <span>
+                       Tool
+                     </span>
+                     <p>
+                       Sketch / Illustrator / Photoshop / ProtoPie / Adobe XD
+                     </p>
+                   </li>
+                 </ul>
+
+               </li>
+
+             </ul>
           </div>
-          <p>
-            Design always be hard to me. But it's really worth to try. Because it makes me feel alive. Woowhoooooo!!!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
+       </div>
       </section>
 
-      <section class="contact">
+      <section class="about container-fluid">
+        <div class="row">
+          <div class="about-title-box col-lg-6 col-md-6 col-sm-12">
+            <h1>
+              About <br /> SOHYUN.
+            </h1>
+          </div>
+
+          <div class="about-detail-box  col-lg-6 col-md-6 col-sm-12">
+            <p>
+              Design always be hard to me. But it's really worth to try. Because it makes me feel alive. Woowhoooooo!!!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="work-detail-btn">
+              <button type="button" name="button" class="basic-btn">
+                Resume
+                <i class="fas fa-angle-right"></i>
+              </button>
+            </div>
+            <ul>
+              <li>
+                <span>
+                  Email
+                </span>
+                <p>
+                  <a href="mailto:ssohyun91@gmail.com">ssohyun91@gmail.com</a>
+                </p>
+              </li>
+              <li>
+                <span>
+                  Phone
+                </span>
+                <p>
+                  +82 010 8591 3144
+                </p>
+              </li>
+            </ul>
+
+            <h2>Thank you for watching!</h2>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- <section class="contact">
         <div class="contact-box">
           <h2>
             Get in touch with me!
@@ -176,104 +287,32 @@ body, html {
             </li>
           </ul>
         </div>
-      </section>
-  </div><!-class="warpper" end-->
+      </section> -->
+  </div><!--class="warpper" end-->
 
-  <div class="bgimg-1" style="background-color: rgb(216, 199, 250);">
-    <div class="caption">
-      <!-- <span class="border">SCROLL DOWN</span> -->
-      <h1 style="font-size: 10em; color:rgb(253, 255, 136)">
-          Hi, I'm SOHYUN.
-      </h1>
-      <h4>
-          Please call me ChaCha.
-      </h4>
-    </div>
-  </div>
 
-  <div class="bgimg-1">
-    <div class="work-box">
-      <h3>
-        Title
-      </h3>
-      <div class="work-summary">
-        <p>
-          Summary about selected Portfolio work within 3 lines.Summary about selected Portfolio work within 3 lines.Summary about selected Portfolio work within 3 lines.
-        </p>
-      </div>
-      <div class="work-info">
-        <ul>
-          <li>
-            <h4>
-              Role
-            </h4>
-            <p>
-              UX UI Design / Publishing
-            </p>
-          </li>
-          <li>
-            <h4>
-              Period
-            </h4>
-            <p>
-              2018.06 - 2018.07
-            </p>
-          </li>
-          <li>
-            <h4>
-              Tools
-            </h4>
-            <p>
-              Sketch / Illustrator / Photoshop / ProtoPie / Adobe XD
-            </p>
-          </li>
-        </ul>
-      </div>
-    </div><!-- class="work-box" end-->
-  </div>
-
-  <!-- <div class="bgimg-2" style="background-color:#000;">
-    <div class="caption">
-      <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
-    </div>
-  </div>
-
-  <div style="position:relative;">
-    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-      <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
-    </div>
-  </div>
-
-  <div class="bgimg-3">
-    <div class="caption">
-      <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
-    </div>
-  </div>
-
-  <div style="position:relative;">
-    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-      <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
-    </div>
-  </div> -->
-
-  <div class="bgimg-1" style="background-color: rgb(216, 199, 250);">
-    <div class="caption">
-      <div class="about-box">
-        <div class="about-selfie">
-          <img src="" alt="" />
-        </div>
-        <p>
-          Design always be hard to me. But it's really worth to try. Because it makes me feel alive. Woowhoooooo!!!
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-    </div>
-  </div>
 
 
   <!-- Bootstrap script -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.cssslider.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="./js/typed/lib/typed.min.js" type="text/javascript"></script>
+  <script>
+  $(document).ready(function() {
+      new Typed('#typed', {
+        strings: ["Hi,<br/> I'm<br/> SOHYUN.", "Hi,<br/> I'm<br/> SOHYUN.", "你好,<br/>我叫朴炤炫。", "안녕하세요,<br/>박소현입니다."],
+        typeSpeed: 70,
+        backSpeed: 10,
+        backDelay: 2000,
+        loop:true
+      });
+  });
+  </script>
   </body>
 </html>
