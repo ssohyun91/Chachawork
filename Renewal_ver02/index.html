@@ -7,15 +7,17 @@
 
     <!-- Bootsrtrap css-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <link type="text/css" rel="stylesheet" href="css/animated-slider.css" />
+
+    <!-- Carousel css-->
+    <link type="text/css" rel="stylesheet" href="./static/css/animated-slider.css" />
 
     <!-- Fontawesome links-->
     <link rel="stylesheet" href="./static/fontawesome/css/fontawesome.css" />
-    <link rel="stylesheet" href="static/fontawesome/css/solid.css" />
+    <link rel="stylesheet" href="./static/fontawesome/css/solid.css" />
 
     <!-- css-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="./static/css/master.css">
 
 
     <title>ChaCha World</title>
@@ -100,7 +102,7 @@
 
 
            <div class="work-pfBox col-lg-6 col-md-6 col-sm-12">
-             <ul class="work-pfBox-list">
+             <!-- <ul class="work-pfBox-list">
 
                <li>
                  <div class="work-pfBox-list-img">
@@ -227,23 +229,53 @@
 
                </li>
 
-             </ul>
+             </ul> -->
+
+             <div class="choose_slider" style="height: 350px; position: relative;">
+
+                 <div class="choose_slider_items">
+                     <ul id="mySlider1">
+                         <li class="current_item">
+                             <a href="#">
+                                 <img src="./static/image/pf_list_spotlife.png" />
+                             </a>
+                         </li>
+                         <li class="current_item">
+                             <a href="#">
+                                 <img src="./static/image/pf_list_coldbrew.png" />
+                             </a>
+                         </li>
+                         <li class="current_item">
+                             <a href="#">
+                                 <img src="./static/image/pf_list_nikon.png" />
+                             </a>
+                         </li>
+                         <li class="current_item">
+                             <a href="#">
+                                 <img src="./static/image/pf_list_spotlife.png" />
+                             </a>
+                         </li>
+                     </ul>
+                 </div>
+             </div>
+             <div><a id="btn_next1" href="#">Next</a></div>
+             <div><a id="btn_prev1" href="#">Previous</a></div>
           </div>
        </div>
       </section>
 
       <section class="about container-fluid">
         <div class="row">
-          <div class="about-title-box col-lg-6 col-md-6 col-sm-12">
+          <div class="about-titleBox col-lg-6 col-md-6 col-sm-12">
             <h1>
               About <br /> SOHYUN.
             </h1>
           </div>
 
-          <div class="about-detail-box  col-lg-6 col-md-6 col-sm-12">
+          <div class="about-detailBox  col-lg-6 col-md-6 col-sm-12">
             <p>
               Design always be hard to me. But it's really worth to try. Because it makes me feel alive. Woowhoooooo!!!
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
             <div class="work-detail-btn">
               <button type="button" name="button" class="basic-btn">
@@ -275,23 +307,7 @@
         </div>
 
       </section>
-
-      <!-- <section class="contact">
-        <div class="contact-box">
-          <h2>
-            Get in touch with me!
-          </h2>
-          <ul>
-            <li>
-              <a href="mailto:ssohyun91@gmail.com">ssohyun91@gmail.com</a>
-            </li>
-          </ul>
-        </div>
-      </section> -->
   </div><!--class="warpper" end-->
-
-
-
 
   <!-- Bootstrap script -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
@@ -300,9 +316,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery.cssslider.js"></script>
+  <script type="text/javascript" src="./static/js/jquery.cssslider.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script src="./js/typed/lib/typed.min.js" type="text/javascript"></script>
+  <script src="./static/js/typed/lib/typed.min.js" type="text/javascript"></script>
   <script>
   $(document).ready(function() {
       new Typed('#typed', {
@@ -311,6 +327,17 @@
         backSpeed: 10,
         backDelay: 2000,
         loop:true
+      });
+  });
+
+  $(function() {
+      $("#mySlider1").AnimatedSlider( {
+        prevButton: "#btn_prev1",
+        nextButton: "#btn_next1",
+        visibleItems: 3,
+        infiniteScroll: true,
+        willChangeCallback: function(obj, item) { $("#statusText").text("Will change to " + item); },
+        changedCallback: function(obj, item) { $("#statusText").text("Changed to " + item); }
       });
   });
   </script>

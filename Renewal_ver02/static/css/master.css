@@ -86,15 +86,24 @@ h1{
 }
 
 /* work section */
+.work{
+  background-image: url("../image/Work_box Copy 8@2x.png");
+}
+
 div.work-txtBox{
-  background-color:rgba(255, 255, 255, 0.1);
+  background-color:rgba(255, 255, 255, 0.9);
   border-radius:10px;
   position:relative;
-  top:20%;
+  top:150px;
   left:35px;
   max-width:640px;
   max-height: 520px;
   padding:30px 60px;
+  /* border:1px solid #000; */
+}
+
+.work-txtBox .work-summary p{
+  text-align: justify;
 }
 
 .work-txtBox .work-info ul li{
@@ -129,25 +138,56 @@ button.basic-btn i{
   margin-top:4px;
 }
 
+button.basic-btn:hover{
+  box-shadow:0px 0px 5px 1px #4a4a4a;
+}
+
+button.basic-btn:active{
+  color:#083073;
+  background-color:#fff2e7;
+}
+
+
 /* About */
 .about{
   background-image: url("../image/about_bg_png.png");
   color:#fff;
+  position:relative;
 }
 
-.about-title-box h1{
+.about-titleBox h1{
   position:relative;
   top:350px;
   padding-left:10%;
 }
 
-.about-detail-box{
+.about-detailBox{
   background-color:rgba(255, 255, 255, 0.1);
   border-radius:10px;
   position:relative;
-  top:20%;
-  right:35px;
+  top:150px;
   max-width:640px;
   max-height: 520px;
   padding:30px 60px;
+}
+
+.about-detailBox p{
+  text-align: justify;
+}
+
+.about-detailBox .work-detail-btn{
+  margin:40px 0;
+}
+
+.about-detailBox ul li{
+  margin:30px 0;
+}
+
+.about-detailBox ul li span{
+  font-weight:700;
+}
+
+.about-detailBox h2{
+  font-weight:600;
+  margin-bottom:10px;
 }
