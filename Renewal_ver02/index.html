@@ -58,11 +58,11 @@
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12">
            <div class="work-txtBox">
-             <h1>
+             <h1 id="content-title">
                Title
              </h1>
              <div class="work-summary">
-               <p>
+               <p id="content-body">
                  Summary selected Portfolio work within 3 lines.Summary selected Portfolio work within 3 lines.Summary selected Portfolio work within 3 lines.
                </p>
              </div>
@@ -72,7 +72,7 @@
                    <span>
                      Role
                    </span>
-                   <p>
+                   <p id="content-role">
                      UX UI Design
                    </p>
                  </li>
@@ -80,7 +80,7 @@
                    <span>
                      Period
                    </span>
-                   <p>
+                   <p id="content-period">
                      2018.06 - 2018.07
                    </p>
                  </li>
@@ -88,7 +88,7 @@
                    <span>
                      Tool
                    </span>
-                   <p>
+                   <p id="content-tool">
                      Sketch / Illustrator / Photoshop / ProtoPie / Adobe XD
                    </p>
                  </li>
@@ -105,164 +105,38 @@
 
 
            <div class="work-pfBox col-lg-6 col-md-6 col-sm-12">
-             <!-- <ul class="work-pfBox-list">
-
-               <li>
-                 <div class="work-pfBox-list-img">
-                   <img src="" alt="">
-                 </div>
-                 <h3>
-                   Mobile Application - SPOTLIFE
-                 </h3>
-
-                 <ul class="work-pfBox-list-info">
-                   <li>
-                     <p>
-                       SPOTLIFE is an exhibition mobile application. It will provide to people who want to access an exhibition easily and quickly.
-                     </p>
-                   </li>
-                   <li>
-                     <span>
-                       Role
-                     </span>
-                     <p>
-                       UX UI Design
-                     </p>
-                   </li>
-                   <li>
-                     <span>
-                       Period
-                     </span>
-                     <p>
-                       2018.06 - 2018.07
-                     </p>
-                   </li>
-                   <li>
-                     <span>
-                       Tool
-                     </span>
-                     <p>
-                       Sketch / Illustrator / Photoshop / ProtoPie / Adobe XD
-                     </p>
-                   </li>
-                 </ul>
-
-               </li>
-               <li>
-                 <div class="work-pfBox-list-img">
-                   <img src="" alt="">
-                 </div>
-                 <h3>
-                   Event Website - Coldbrew by Babinski
-                 </h3>
-
-                 <ul class="work-pfBox-list-info">
-                   <li>
-                     <p>
-                       Coldbrew by Babinski is a brand for a coldbrew coffee at Hankuk Yakurt Company. It has lots of goodness, but there wans't website its own. Therefore the needs came up, and I trying to make one.
-                      </p>
-                   </li>
-                   <li>
-                     <span>
-                       Role
-                     </span>
-                     <p>
-                       UI Design /  Publishing
-                     </p>
-                   </li>
-                   <li>
-                     <span>
-                       Period
-                     </span>
-                     <p>
-                       2016.12 - 2017.01
-                     </p>
-                   </li>
-                   <li>
-                     <span>
-                       Tool
-                     </span>
-                     <p>
-                      Illustrator / Photoshop
-                     </p>
-                   </li>
-                 </ul>
-
-               </li>
-
-               <li>
-                 <div class="work-pfBox-list-img">
-                   <img src="" alt="">
-                 </div>
-                 <h3>
-                   Mobile Application - SPOTLIFE
-                 </h3>
-
-                 <ul class="work-pfBox-list-info">
-                   <li>
-                     <p>
-                       SPOTLIFE is an exhibition mobile application. It will provide to people who want to access an exhibition easily and quickly.
-                     </p>
-                   </li>
-                   <li>
-                     <span>
-                       Role
-                     </span>
-                     <p>
-                       UX UI Design
-                     </p>
-                   </li>
-                   <li>
-                     <span>
-                       Period
-                     </span>
-                     <p>
-                       2018.06 - 2018.07
-                     </p>
-                   </li>
-                   <li>
-                     <span>
-                       Tool
-                     </span>
-                     <p>
-                       Sketch / Illustrator / Photoshop / ProtoPie / Adobe XD
-                     </p>
-                   </li>
-                 </ul>
-
-               </li>
-
-             </ul> -->
-
              <div class="choose_slider" style="height: 350px; position: relative;">
 
                  <div class="choose_slider_items">
                      <ul id="mySlider1">
-                         <li class="current_item">
+                         <li class="current_item" data-content-role="UX UI Design" data-content-tool="Sketch / Illustrator / Photoshop / ProtoPie / Adobe XD" data-content-period="2018.06 - 2018.07" data-image-url="./static/image/background/spotlife_background.png" data-content-title="Mobile Application - SPOTLIFE" data-content-body="SPOTLIFE is an exhibition mobile application. It will provide to people who want to access an exhibition easily and quickly.">
                              <a href="#">
                                  <img src="./static/image/pf_list_spotlife.png" />
                              </a>
                          </li>
-                         <li class="current_item">
+                         <li class="current_item" data-content-tool="Illustrator / Photoshop" data-content-role="UI Design /  Publishing" data-content-period="2016.12 - 2017.01" data-content-title="Event Website - Coldbrew by Babinski" data-content-body="Coldbrew by Babinski is a brand for a coldbrew coffee at Hankuk Yakurt Company. It has lots of goodness, but there wans't website its own. Therefore the needs came up, and I trying to make one." data-image-url="./static/image/background/coldbrew_background.png">
                              <a href="#">
                                  <img src="./static/image/pf_list_coldbrew.png" />
                              </a>
                          </li>
-                         <li class="current_item">
+                         <li class="current_item" data-image-url="">
                              <a href="#">
                                  <img src="./static/image/pf_list_nikon.png" />
                              </a>
                          </li>
-                         <li class="current_item">
-                             <a href="#">
-                                 <img src="./static/image/pf_list_spotlife.png" />
-                             </a>
-                         </li>
+                       <li class="current_item" data-image-url="">
+                         <a href="#">
+                           <img src="./static/image/pf_list_nikon.png" />
+                         </a>
+                       </li>
                      </ul>
                  </div>
              </div>
-             <div><a id="btn_next1" href="#">Next</a></div>
-             <div><a id="btn_prev1" href="#">Previous</a></div>
+             <div>
+               <a id="btn_next1" href="#">&lt;</a>
+               <a href=""></a>
+               <a id="btn_prev1" href="#">&gt;</a>
+             </div>
           </div>
        </div>
       </section>

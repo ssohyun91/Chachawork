@@ -9,7 +9,7 @@ html, body {
   width:100%;
   height:100%;
   font-family: 'Open Sans', sans-serif;
-
+  font-size: 14px;
 }
 .warpper{
   width: 100%;
@@ -28,6 +28,10 @@ nav{
   width:100%;
   margin: 0;
   padding: 0;
+}
+
+.container-fluid > .row {
+  padding-top: 80px;
 }
 
 nav ul li a{

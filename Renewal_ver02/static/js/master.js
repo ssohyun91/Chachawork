@@ -18,7 +18,16 @@ $(function() {
       visibleItems: 3,
       infiniteScroll: true,
       willChangeCallback: function(obj, item) { $("#statusText").text("Will change to " + item); },
-      changedCallback: function(obj, item) { $("#statusText").text("Changed to " + item); }
+      changedCallback: function(obj, item) {
+          var $target = $($('#mySlider1').children()[item]);
+          $target.closest('.container-fluid').css('background-image', 'url('+$target.attr('data-image-url')+')');
+          $('#content-title').html($target.attr('data-content-title'));
+          $('#content-body').html($target.attr('data-content-body'));
+          $('#content-role').html($target.attr('data-content-role'));
+          $('#content-period').html($target.attr('data-content-period'));
+          $('#content-tool').html($target.attr('data-content-tool'));
+
+      }
     });
 });
 
